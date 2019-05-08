@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Game of Life</title>
+	<script type="text/javascript" src="gol.js"></script>
+	<style type="text/css">
+        #golGrid { border-collapse:collapse; border-top:solid 1px Black; border-bottom: solid 1px Black;}
+		#golGrid td{border:1px solid black; width:30px; height:30px; }
+		
+		html,body{
+			overflow: hidden;
+			height: 100%;
+		}
+    </style>
+</head>
+
+<body>
+	<center><h1>Game of Life</h1></center>
+	<center><button type="button" onclick="start()" id="startBtn">Start</button><button type="button" onclick="reset()">Reset</button></center>
+	<br>
+	<center>
+		<table id="golGrid"><tr></tr></table>
+	</center>
+</body>
